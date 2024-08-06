@@ -1,0 +1,4 @@
+let domains = dynamic(["chatgpt.com", "openai.com", "huggingface.co", "perplexity.ai", "poe.com", "anthropic.com", "mistral.ai", "cohere.com", "ai21.com", "gemini.google.com", "together.ai", "claude.ai", "pi.ai", "rytr.me", "bearly.ai", "replit.com", "tabnine.com", "mintlify.com", "character.ai", "afforai.com", "runwayml.com", "you.com", "writesonic.com", "jasper.ai", "replika.ai", "socratic.org", "uberduck.ai", "elevenlabs.io", "copilot.microsoft.com", "glbgpt.com"]);
+CommonSecurityLog
+| where NetworkProtocol == "HTTP" and DeviceCustomString1 in (domains)
+| project TimeGenerated, SourceIP, DestinationIP, DeviceCustomString1, URIPath, FileName
