@@ -1,10 +1,10 @@
 # Detection Signatures and rules 
 
-This repository currently contains SIEM rules for detecting access to specific domains of known generative AI tools and associated file activities across different SIEM platforms: Splunk, IBM QRadar, Microsoft Sentinel, and Elastic (ELK) Stack.
+This repository currently contains rules for detecting access to specific domains of known generative AI tools and associated file activities across different SIEM platforms: Splunk, IBM QRadar, Microsoft Sentinel, and Elastic (ELK) Stack.
 
 ## Repository Structure
 
-The repository is organized by SIEM platform, each containing the specific detection rule.
+The repository is organized by platform, each containing the specific detection rule.
 
 
 ## How to Use
